@@ -20,7 +20,7 @@ This is a sample textbook for ANTH\&100--Survey of Anthropology at Lower Columbi
 
 ## TLDR:  What's under the hood? {-}
 
-This book written using files written in either in [Markdown](https://en.wikipedia.org/wiki/Markdown) or [R Markdown](http://rmarkdown.rstudio.com/). You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+This book uses files written in either in [Markdown](https://en.wikipedia.org/wiki/Markdown) or [R Markdown](http://rmarkdown.rstudio.com/). You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
 For now, you have to install the development versions of **bookdown** from Github:
 
