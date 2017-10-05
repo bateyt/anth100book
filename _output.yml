@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Companion Text for Survey of Anthropology</a></li>
+        <li><a href="./">Survey of Anthropology</a></li>
       after: |
         <li><a href="https://github.com/bateyt/anth100book" target="blank">Published with bookdown</a></li>
     edit: https://github.com/bateyt/anth100book/edit/master/%s
