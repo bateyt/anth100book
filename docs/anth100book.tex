@@ -125,7 +125,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2017-10-04}
+  \date{2017-10-05}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -188,18 +188,24 @@ To compile this example to PDF, you need to install XeLaTeX.
 
 \chapter{Introduction}\label{intro}
 
+\section{What is anthropology?}\label{what-is-anthropology}
+
+\section{Chapter/section labeling}\label{chaptersection-labeling}
+
 You can label chapter and section titles using \texttt{\{\#label\}}
 after them, e.g., we can reference Chapter \ref{intro}. If you do not
 manually label them, there will be automatic labels anyway, e.g.,
 Chapter \ref{arch}.
+
+\section{Figures and tables}\label{figures-and-tables}
 
 Figures and tables with captions will be placed in \texttt{figure} and
 \texttt{table} environments, respectively.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
+\NormalTok{p <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(dnica, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =} \NormalTok{age, }\DataTypeTok{fill =} \NormalTok{sex)) +}\StringTok{ }\KeywordTok{geom_histogram}\NormalTok{(}\DataTypeTok{position =} \StringTok{"dodge"}\NormalTok{, }\DataTypeTok{alpha =} \FloatTok{0.6}\NormalTok{) +}\StringTok{ }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Historical Mortality Data"}\NormalTok{, }\DataTypeTok{subtitle =} \StringTok{"Recorded Age at Death"}\NormalTok{)}
+\NormalTok{p}
 \end{Highlighting}
 \end{Shaded}
 
@@ -211,6 +217,13 @@ Figures and tables with captions will be placed in \texttt{figure} and
 
 \caption{Here is a nice figure!}\label{fig:nice-fig}
 \end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# par(mar = c(4, 4, .1, .1))}
+\CommentTok{# plot(pressure, type = 'b', pch = 3)}
+\end{Highlighting}
+\end{Shaded}
 
 Reference a figure by its code chunk label with the \texttt{fig:}
 prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can
@@ -260,6 +273,8 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\section{Citations with bookdown}\label{citations-with-bookdown}
 
 You can write citations, too. For example, we are using the
 \textbf{bookdown} package \citep{R-bookdown} in this sample book, which
