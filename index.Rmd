@@ -15,7 +15,14 @@ description: "This is a minimal example of using the bookdown package to write a
 
 # Preface {-}
 
-This is a sample textbook for ANTH\&100--Survey of Anthropology at Lower Columbia College. 
+This is a sample textbook for ANTH\&100--Survey of Anthropology at Lower Columbia College.
+
+
+## What? I can embed a video? {-}
+
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QqL2pWzA300?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 ## TLDR:  What's under the hood? {-}
