@@ -5,7 +5,10 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Survey of Anthropology</a></li>
       after: |
+        <ul style="list-style-type:none">
         <li><a href="https://github.com/bateyt/anth100book" target="blank">Published with bookdown</a></li>
+        <li><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></li>
+        </ul>
     edit: https://github.com/bateyt/anth100book/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
